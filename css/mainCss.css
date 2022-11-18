@@ -1,0 +1,380 @@
+@charset "utf-8";
+
+
+
+
+/*모바일 CSS*/
+
+
+
+/*모바일 내비 영역*/
+.sideBarBlack {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 999;
+}
+
+.sideBar {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    padding: 15px;
+}
+
+.sideTop {
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.sideTop i {
+    float: right;
+    top: 0;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.sideTop h3 {
+    font-size: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f1f1;
+    margin-top: 70px;
+    cursor: default;
+    font-family: 'Noticia Text', serif;
+    letter-spacing: 3px;
+}
+
+.navMenu {
+    margin-top: 50px;
+}
+
+.navMenu a {
+    display: block;
+    padding: 16px 0;
+    font-size: 20px;
+    color: #999;
+    transition: all 0.3s;
+    font-family: 'Vidaloka', serif;
+    font-weight: 600;
+}
+
+.navMenu a:hover {
+    color: #333;
+}
+
+.sideBottom {
+    margin-top: 70px;
+    border-top: 1px solid #f1f1f1;
+    padding-top: 50px;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+.sideBottom a {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    margin: 15px 0;
+    width: 100px;
+}
+
+
+
+/*모바일 헤더 영역*/
+.header {
+    width: 100%;
+    background: #222;
+    padding: 20px;
+    position: fixed;
+}
+
+.header h1 {
+    font-size: 22px;
+    color: #fff;
+    cursor: default;
+    font-family: 'Noticia Text', serif;
+    letter-spacing: 3px;
+}
+
+.header i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.header i.search {
+    display: none;
+}
+
+
+
+/*모바일 탑 섹션 영역*/
+.topSection {}
+
+.topSection img {
+    padding-top: 70px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.topSection img.pcMain {
+    display: none;
+}
+
+
+/*모바일 신상품 영역*/
+.newArrival {
+    padding: 20px;
+    width: 100%;
+}
+
+.newArrival h2,
+.issues h2,
+.story h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 50px 0;
+    color: #555;
+    cursor: default;
+    font-family: 'Vidaloka', serif;
+}
+
+.mainBoxes,
+.issueBoxes {
+    width: 100%;
+    transition: all 0.5s;
+
+}
+
+.mainBoxes img,
+.issueBoxes img {
+    width: 100%;
+}
+
+.mainBoxes p,
+.issueBoxes p {
+    font-size: 15px;
+    color: #333;
+    padding: 30px 0 10px;
+    text-align: center;
+    cursor: default;
+    font-size: 20px;
+    font-family: 'Vidaloka', serif;
+}
+
+.mainBoxes button,
+.issueBoxes button {
+    background: #778e70;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 16px;
+    display: block;
+    margin: 20px auto 70px;
+    font-size: 18px;
+    font-family: 'Vidaloka', serif;
+}
+
+
+
+/*모바일 이슈 영역*/
+.issues p,
+.issues button {
+    font-family: 'Noto Serif KR', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.issues,
+.story {
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+
+/*모바일 스토리 영역*/
+.story iframe {
+    width: 100%;
+}
+
+
+
+/*푸터 영역*/
+.footer {
+    width: 100%;
+    background: #222;
+    color: #fff;
+    margin-top: 100px;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-family: 'Noticia Text', serif;
+    letter-spacing: 3px;
+}
+
+.footer a {
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 14px;
+    color: #eee;
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials a {
+    display: inline-block;
+    width: 20px;
+    font-size: 20px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    font-family: 'Noto Serif KR', sans-serif;
+
+}
+
+
+/*탑 버튼*/
+.toTop {
+    position: fixed;
+    right: 0px;
+    bottom: 50px;
+    width: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+/*태블릿 CSS*/
+@media screen and (min-width:700px) {
+
+
+    /*태블릿 신상품 영역*/
+
+    .newArrival::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .newArrival .mainBoxes {
+        width: 48%;
+        float: left;
+        margin: 1%;
+    }
+
+
+
+    /*태블릿 이슈 영역*/
+
+    .issues::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .issueBoxes {
+        float: left;
+        width: 48%;
+        margin: 1%;
+    }
+
+}
+
+
+
+
+/*PC CSS*/
+@media screen and (min-width:1220px) {
+
+    #wrap {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    #wrapContents {
+        width: 900px;
+        margin-left: 300px;
+        background: #f1f1f1;
+    }
+
+    /*PC 사이드 영역*/
+
+    .sideBarBlack {
+        display: block !important;
+        background: none;
+        width: 300px;
+    }
+
+    .sideBar {
+        width: 300px;
+    }
+
+    .sideTop i {
+        display: none;
+    }
+
+
+
+    /*PC 헤더 영역*/
+    .header {
+        position: relative;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .header i {
+        display: none;
+    }
+
+    .header h1 {
+        display: none;
+    }
+
+    .header i.search {
+        display: block;
+        font-size: 18px;
+    }
+
+
+
+    /*PC 메인 이미지*/
+    .topSection img {
+        padding-top: 0;
+    }
+
+    .topSection img.mobileMain {
+        display: none;
+    }
+
+    .topSection img.pcMain {
+        display: block;
+        width: 100%;
+    }
+
+
+}
